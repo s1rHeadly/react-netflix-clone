@@ -1,0 +1,34 @@
+:root{
+  --netflix-color-main: #E50914;
+  --netFlix-color-main-dark: #B81D24;
+  --netflix-color-black: #221F1F;
+  --netflix-color-main-bg: #111;
+  --netflix-color-white: #F5F5F1;
+}
+
+// netflix font
+@import 'https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap';
+$netFlixFont: 'Bebas Neue', sans-serif;
+
+// reset
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  font-size: 62.5%;
+  font-family: $netFlixFont;
+}
+
+body {
+  font-size: 16px;
+  font-family: $netFlixFont;
+  font-weight: normal;
+  color: var(--netflix-color-white);
+  background-color: var( --netflix-color-main-bg);
+}
+

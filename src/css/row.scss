@@ -1,0 +1,42 @@
+.row {
+  margin-left: 20px;
+
+  h2{
+    font-size: 3rem;
+    margin: 40px 0px 20px 0px;
+    text-align: left;
+  }
+  &__posters {
+     display: flex;
+     padding: 0px;
+     overflow-y: hidden;
+     overflow-x: scroll; 
+     cursor: pointer;
+     font-size: 0;
+     scroll-behavior: smooth;
+
+     &::-webkit-scrollbar {
+        display: none;
+     }
+  }
+
+  &__poster {
+     object-fit: cover;
+     aspect-ratio: 1.5/ 2.5;
+     width: 100%;
+     max-height: 320px;
+     transition: transform .35s;
+
+     &:not(:last-child) {
+        margin-right: 20px;
+     }
+
+     &:hover {
+        transform: scale(1.05)
+     }
+
+  }
+  &__posterLarge {
+     max-height: 250px;
+  }
+}

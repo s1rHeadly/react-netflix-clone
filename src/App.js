@@ -1,12 +1,19 @@
-import './App.css';
-import { BASE_URL } from './utils/helpers';
+import Row from './components/Row';
+import requests from './utils/requests';
 
 
 function App() {
+
+
   return (
-    <div className="App">
-      <h1>Base Template</h1>
-    </div>
+    <>
+      <Row title="Top Rated" endPoint={requests.fetchTopRated} />
+      <Row title="Action Movies" endPoint={requests.fetchActionMovies} />
+      <Row title="Comedy Movies" endPoint={requests.fetchComedyMovies} />
+      <Row title="Horror Movies" endPoint={requests.fetchHorrorMovies} />
+      <Row title="Romance Movies" endPoint={requests.fetchRomanceMovies} />
+      <Row title="Documentaries" endPoint={requests.fetchDocumentaries} />
+    </>
   );
 }
 
