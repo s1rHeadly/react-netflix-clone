@@ -28,7 +28,12 @@ body {
   font-size: 16px;
   font-family: $netFlixFont;
   font-weight: normal;
-  color: var(--netflix-color-white);
   background-color: var( --netflix-color-main-bg);
 }
 
+
+.app{
+  color: var(--netflix-color-white);
+  background-color: var( --netflix-color-main-bg);
+  padding-bottom: 1dvh;
+}
