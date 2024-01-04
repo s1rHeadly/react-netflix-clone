@@ -69,10 +69,14 @@
       margin-right: 1rem;
      }
 
+     &.active{
+      background-color: var(--netflix-color-main);
+     }
+
   }
 
   &--fadeBottom {
-    height: 15.4rem;
+    height: 17rem;
     position: absolute;
     bottom: -1px;
      width: 100%;

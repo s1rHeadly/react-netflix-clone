@@ -46,12 +46,12 @@ const bannerStyles = {
           <h1>{name || original_name}</h1>
 
           <div className="banner__buttons">
-            <button className="banner__button">Play</button>
+            <button className="banner__button active">Play</button>
             <button className="banner__button">Add to List</button>
           </div>
 
           <div className="banner__description">
-            <h3>{truncate(overview, 150)}</h3>
+            <h3>{truncate(overview, 170)}</h3>
           </div>
         </div>
         <div className="banner--fadeBottom"></div>
