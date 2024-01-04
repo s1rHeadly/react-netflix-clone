@@ -9,11 +9,19 @@ import '../css/banner.scss';
 
 const Banner = () => {
   const [randomMovie, setRandomMovie] = useState({});
+  const [togglePlay, setTogglePlay] = useState(true);
+  const [toggleList, setToggleList] = useState(false);
 
   const { movies } = useFetch(requests.fetchNetflixOriginals);
 
 
+const handlePlay = () => {
+  setTogglePlay((prevState) => !prevState)
+}
 
+const handleList = () => {
+  setToggleList((prevState) => !prevState)
+}
 
   useEffect(() => {
     const random = Math.floor(Math.random() * movies.length - 1);
@@ -46,8 +54,12 @@ const bannerStyles = {
           <h1>{name || original_name}</h1>
 
           <div className="banner__buttons">
-            <button className="banner__button active">Play</button>
-            <button className="banner__button">Add to List</button>
+            <button
+            className={`banner__button ${togglePlay && "active"}`}
+            onClick={handlePlay}>Play</button>
+            <button
+            onClick={handleList}
+            className={`banner__button ${toggleList && "active"}`}>Add to List</button>
           </div>
 
           <div className="banner__description">
