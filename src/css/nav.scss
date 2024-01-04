@@ -1,0 +1,33 @@
+@import 'global.scss';
+
+.nav {
+  position: fixed;
+  top: 0;
+  padding: 20px;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 9;
+  transition: all .5s ease-in;
+
+
+  &__logo {
+     width: 80px;
+     object-fit: contain;
+     position: fixed;
+     left: 20px;
+  }
+
+  &__avatar {
+     position: fixed;
+     right: 20px;
+     width: 35px;
+     object-fit: contain;
+  }
+
+  &__black {
+     background-color: var(--netflix-color-main-bg);
+  }
+
+}

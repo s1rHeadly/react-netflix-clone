@@ -1,6 +1,7 @@
 import Row from './components/Row';
 import requests from './utils/requests';
 import Banner from './components/Banner';
+import Nav from './components/Nav';
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
 
   return (
     <div className='app'>
+    <Nav />
     <Banner />
       <Row title="Top Rated" endPoint={requests.fetchTopRated} larger={true}/>
       <Row title="Action Movies" endPoint={requests.fetchActionMovies} larger={false} />
