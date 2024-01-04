@@ -30,9 +30,7 @@ const Banner = () => {
     name,
     original_name,
     backdrop_path,
-    poster_path,
     overview,
- 
   } = randomMovie;
 
 
@@ -52,7 +50,7 @@ const bannerStyles = {
             <button className="banner__button">Add to List</button>
           </div>
 
-          <div className="banner_description">
+          <div className="banner__description">
             <h3>{truncate(overview, 150)}</h3>
           </div>
         </div>

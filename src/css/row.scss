@@ -1,12 +1,23 @@
+@import 'global.scss';
+
+
 .row {
   margin: 20px;
+  font-family: $netFlixFont;
 
-   > h2{
+
+   h2{
     font-size: 3rem;
     margin: 40px 0px 20px 0px;
     text-align: left;
     display: inline-block;
-  }
+   }
+
+   
+
+   
+
+  
   &__posters {
      display: flex;
      padding: 0px;

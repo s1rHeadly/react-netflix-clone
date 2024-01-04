@@ -10,7 +10,12 @@
 @import 'https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap';
 $netFlixFont: 'Bebas Neue', sans-serif;
 
-// reset
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap';
+$font-roboto: 'Roboto', sans-serif;
+
+
+
+// simple reset
 
 *, *:before, *:after {
   margin: 0;
