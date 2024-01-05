@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   padding: 20px;
-  height: 30px;
+  height: 70px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -17,6 +17,7 @@
      object-fit: contain;
      position: fixed;
      left: 20px;
+     margin-top: 7px;
   }
 
   &__avatar {
@@ -24,6 +25,7 @@
      right: 20px;
      width: 35px;
      object-fit: contain;
+     top: 17px;
   }
 
   &__black {
